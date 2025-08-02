@@ -1,0 +1,252 @@
+<?php
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="menu_res.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+    <body class="body-back">
+    <nav class="navbar background1">
+        <div class="hamburger" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul class="navlist" id="navList">
+        <div class="logo"><img src="c4.png" alt="logo"/></div>
+         <li><a href="index.html" >Home</a></li>
+         <li><a href="menu.html" >Menu</a></li>
+         <li><a href="story.html" >Our-Story</a></li>
+         <li><a href="gallery.html" >Gallery</a></li>
+         <li><a href="contact.html" >Contact</a></li>
+
+          <li class="order-button-container"><button class="btn order-btn" onclick="open_cont()"><span>Order Now</span></button></li>
+         </ul>
+        </nav>
+
+        <section class="background firstSection">
+       
+    <div class="mcan">
+  <canvas id="mCanvas" width="760" height="650"></canvas>      
+    </div>    
+    <div class="tBig">
+        <p class="ent">"Not just food _ it's a mood.</p>
+        <p class="ent">Scroll through our menu and find what speaks to you. From creamy, crumbly, fluffy to gooey _ it's all here"</p>
+        
+        <h1 class="ent1">Home//Menu</h1>
+    </div>
+   
+        </section>
+
+
+   <section class="head2">
+     <div class="text2">
+                <h1> Checkout</h1>
+                <h2>OUR MENU</h2>
+                <img src="web3.jpg"/>
+                <p>Presenting an assorted array of rich & velvety cakes, prepared with the most premium ingredients.</p>
+                <button class="btn" onclick="full_menu()"><span>Download our full menu</span></button>
+      </div>
+
+      <div class="fl-box">
+        <div class="img2"><img src="i7.jpg"/></div>
+        <div class="img3"><img src="i6.jpg"/></div> 
+        <div class="img4"><img src="i5.jpg"/></div>
+        <div class="img5"><img src="i8.jpg"/></div> 
+      </div>
+</section>
+
+<div class="space">
+<h1>A Sweet  Luxurious</h1>
+<h2>EXPERIENCE</h2>
+</div>
+
+<section style="width: 100%;height: 150vh;background: white;">
+    <div class="menu-time">
+    <h1>Birthday Special /Costomized</h1>
+    <div class="menu-time-1"> 
+          <div class="menu-time-1-1 phone-time-1"><img src="c7.jpg"/></div>
+          <div class="menu-time-1-1 phone-time-2"><img src="c10.jpg"/></div>
+          <div class="menu-time-1-1 phone-time-3"><img src="c13.jpg"/></div>
+          <div class="menu-time-1-1 phone-time-4"><img src="c11.jpg"/></div>
+    </div>
+    <div class="menu-time-2">
+        <div class="menu-time-2-1 phone-time-1"><h3>Blush Bow</h3></div>
+        <div class="menu-time-2-2 phone-time-2"><h3>Panda Pop</h3></div>
+        <div class="menu-time-2-3 phone-time-3"><h3>Toon Treat</h3></div>
+        <div class="menu-time-2-4 phone-time-4"><h3>Berry Bear Hug</h3></div>
+    </div>    
+    <div class="menu-time-3">
+        <div class="menu-time-3-1 phone-time-1"><h4>Pink | Royal</h4></div>
+        <div class="menu-time-3-2 phone-time-1"><h4>vanilla | kids</h4></div>
+        <div class="menu-time-3-3 phone-time-1"><h4>Cheese | Fun</h4></div>
+        <div class="menu-time-3-4 phone-time-1"><h4>Berry | Cute</h4></div>
+       
+    </div>
+        </div>
+    <div class="Choco">
+    <h1>Devine Chocolate Delights</h1>
+    <div class="choco-time-1"> 
+          <div class="choco-time-1-1 phone-time-1"><img src="i10.jpg"/></div>
+          <div class="choco-time-1-1 phone-time-2"><img src="i11.jpg"/></div>
+          <div class="choco-time-1-1 phone-time-3"><img src="i12.jpg"/></div>
+          <div class="choco-time-1-1 phone-time-4"><img src="i13.jpg"/></div>
+    </div>
+    <div class="choco-time-2">
+        <div class="choco-time-2-1 phone-time-1"><h3>Choco Crown</h3></div>
+        <div class="choco-time-2-2 phone-time-2"><h3>Mocha Swirl</h3></div>
+        <div class="choco-time-2-3 phone-time-3"><h3>Rosy Heart</h3></div>
+        <div class="choco-time-2-4 phone-time-4"><h3>Sprinkle Rings</h3></div>
+    </div>    
+    <div class="choco-time-3">
+        <div class="choco-time-3-1 phone-time-1"><h4>Classic</h4></div>
+        <div class="choco-time-3-2 phone-time-1"><h4>Muffins</h4></div>
+        <div class="choco-time-3-3 phone-time-1"><h4>Love</h4></div>
+        <div class="choco-time-3-4 phone-time-1"><h4>Donuts</h4></div>
+       
+    </div>
+        </div>
+</section>
+
+<section style="width: 100%;height: 140vh;background: white;margin-top: 0" >
+    
+    <div class="text3">
+        <h1>From Our Menu</h1>
+        <h2>TRY OUR SPECIAL CAKES</h2>
+        <img src="web3.jpg"/>
+    </div>
+
+    <div class="price">
+        <h1>Vanilla Cake</h1>
+        <h2>₹349</h2>
+        <h3>Classic vanilla cake with soft,fluffy texture and buttery flavor</h3>
+        
+        <h1>Chocolate Cake</h1>
+        <h2>₹499</h2>
+        <h3>Induldge in rich,pure and high quality chocolate cake</h3>
+        
+        <h1>Chocollate choco chip cake</h1>
+        <h2>₹519</h2>
+        <h3>rich chocolate cake loaded with chocolate chip,for a double choco delight</h3>
+
+        <h1>German Black Forest</h1>
+        <h2>₹519</h2>
+        <h3>layers of chocolate sponge cake,cherries,topped with choco shavings</h3>    
+    </div>
+
+    <div class="price2">
+        <h1>Chocolate Mousse Cake</h1>
+        <h2>₹529</h2>
+        <h3>Induldge in a velvety cohoclate mousse cake with a light and airy texture</h3>
+        
+        <h1>Fresh Fruit Cake</h1>
+        <h2>₹539</h2>
+        <h3>Ligh and refreshing cake filled with seasonal frsh fruits</h3>
+        
+        <h1>Red Velvet Cake</h1>
+        <h2>₹549</h2>
+        <h3>A classic red velvet cake with a hint of cocoa, velvety texture, and cream cheese frosting </h3>
+
+        <h1>Truffle Cake</h1>
+        <h2>₹549</h2>
+        <h3>Decadent truffle cake with layers of rich chocolate ganache and sponge</h3>
+    </div>
+
+   <hr style="width: 200px;height: 1px;background-color: #cfa670;margin-top: -230px;margin-left: 443px;">
+    <hr style="width: 253px;height: 1px;background-color: #cfa670;margin-top: 80px;margin-left: 392px;">
+    <hr style="width: 145px;height: 1px;background-color: #cfa670;margin-top: 80px;margin-left: 500px;">
+    <hr style="width: 170px;height: 1px;background-color: #cfa670;margin-top: 75px;margin-left: 476px;">
+    
+    <hr style="width: 157px;height: 1px;background-color: #cfa670;margin-top: -243px;margin-left: 1160px;">
+    <hr style="width: 253px;height: 1px;background-color: #cfa670;margin-top: 80px;margin-left: 1060px;">
+    <hr style="width: 70px;height: 1px;background-color: #cfa670;margin-top: 80px;margin-left: 1240px;">
+    <hr style="width: 150px;height: 1px;background-color: #cfa670;margin-top: 75px;margin-left: 1170px;">
+    
+</section>
+
+<section class="trd-sec">
+  <div class="icon">
+    <i class="fa-solid fa-location-dot"></i>
+    <i class="fa-solid fa-envelope"></i>
+    <i class="fa-solid fa-phone"></i>
+  </div>
+  <div class="end">
+    <h1>Contact</h1>
+    <h3>Herbal Park, Sector-26, Panchkula, Haryana</h3>
+    <h4>info@bakebliss.com</h4>
+    <h4>+91-7082010305</h4>
+  </div>
+  <div class="end1">
+    <h1>Bake Bliss</h1>
+    <h3>Cakes</h3>
+    <h4>Cheesecakes</h4>
+    <h4>Donuts</h4>
+    <h4>Pastry</h4>
+    <h4>Chocolate</h4>
+    <h4>Home Delivery in Panchkula</h4>
+    <i class="fa-brands fa-facebook"></i>
+    <i class="fa-brands fa-twitter"></i>
+    <i class="fa-brands fa-instagram"></i>
+    <i class="fa-brands fa-whatsapp"></i>
+  </div>
+  <div class="end">
+    <h1>Working Hours</h1>
+    <h3>Mon-Fri...............8AM To 8PM</h3>
+    <h4>Sat........................8AM To 6PM</h4>
+    <h4>Sun.....................11AM To 4PM</h4>
+  </div>
+  
+</section>
+
+
+
+</body>
+
+ <script>
+                window.onload = function () {
+        var canvas = document.getElementById("mCanvas");
+        var ctext = canvas.getContext("2d");
+
+        var screenWidth = window.innerWidth;
+        var x = 60;
+        var y = 620;
+        var fontSize = "170pt";
+
+        if (screenWidth <= 767) {
+            canvas.width = 420;
+            canvas.height = 180;
+            x = 80;
+            y = 100;
+            fontSize = "50pt"; // mobile font size
+        }
+
+        ctext.font = fontSize + " Segoe Print";
+        ctext.lineWidth = 4;
+        ctext.strokeStyle = "#cfa670ff";
+        ctext.strokeText("Menu", x, y);
+    };
+
+    
+
+                function open_cont() {
+        window.location.href = "contact.html";
+    }
+    
+                function full_menu() {
+        window.location.href = "gallery.html#gallery";
+    }
+    
+    function toggleMenu() {
+    const navList = document.getElementById("navList");
+    navList.classList.toggle("show");
+}
+
+
+   </script>
+</html>

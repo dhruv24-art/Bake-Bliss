@@ -1,0 +1,578 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.body-back{
+    background: rgba(0, 0, 0, 0.3) url('c4.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    animation: fadeIn 1.5s ease-in-out forwards;
+
+}
+
+.logo{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img{
+    width: 50%;
+    border: 2px solid white;
+    border-radius: 50px;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    cursor: pointer;
+    animation: fadeIn 1.5s ease-in-out forwards;
+}
+@keyframes fadeIn{
+from{
+    opacity: 0;
+    transform: translateY(-20px);
+}
+to{
+    opacity: 1;
+    transform: translateY(0);
+}
+}
+
+
+.navlist{
+    width: 100%;
+  /*  background-color: black;*/
+    display: flex;
+    align-items: center;
+}
+
+.navlist li{
+list-style: none;
+padding: 20px 40px;
+transition: transform 0.3s ease;
+}
+
+.navlist li a{
+text-decoration: none;
+color: white;
+padding-left: 20px;
+font-size: 17px;
+display: inline-block;
+transition: transform 0.3s ease;
+}
+
+.navlist li a:hover{
+    transform: translateY(-5px);
+    font-size: 16.5px;
+    color: #cfa670;
+}
+
+
+.navlist img{
+    width: 80px;
+    height: 60px;
+}
+
+/* New styles for the order button */
+.order-button-container {
+    margin-left: 200px; /* Pushes the button to the far right */
+    padding-right: 20px; /* Adjust padding as needed */
+}
+
+.order-btn {
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    background: #cfa670;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    color: #000000;
+    width: 120px; /* Adjust width as needed */
+    height: 40px;
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+
+.order-btn span {
+    position: relative;
+    z-index: 1;
+}
+
+.order-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0%;
+    background-color: #000000;
+    transition: width 0.4s ease;
+    z-index: 0;
+}
+
+.order-btn:hover::before {
+    width: 100%;
+}
+
+.order-btn:hover span {
+    color: #cfa670;
+}
+
+
+.background{
+    background: rgba(0, 0, 0, 0.8) url('i7.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+    animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+.background1{
+    background: rgba(0, 0, 0, 0.9)url('c6.jpg') ;
+    background-size: cover;
+    background-blend-mode: darken;
+    animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+
+.firstSection{
+display: flex;    
+height: 95vh;
+}
+
+.tBig{
+    padding: 70px;
+    width: 450px;
+    color: white;
+    font-size: 16.5px;
+    margin-top: 385px;
+    margin-left: 30px;
+    text-align: justify;
+    font-family: 'Segoe Print',sans-serif;
+}
+
+.tBig p{
+    opacity: 0;
+    transform: translateY(100px);
+    animation: slideUp 2s ease-out 2s forwards;
+
+}
+
+.tBig h1{
+      opacity: 0;
+    transform: translateY(100px);
+    animation: slideUp 2s ease-out 2s forwards;
+    font-size: 35px;
+}
+
+#mCanvas{
+    
+    opacity: 0;
+    transform: translateY(100px);
+    animation: slideUp 2s ease-out 2s forwards;
+
+}
+
+@keyframes slideUp{
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.form{
+    width: 100%;
+    height: 60vh;
+    background: white;
+}
+
+.form-group {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  padding: 50px 20px;
+  flex-wrap: wrap;
+}
+
+.form-item {
+  flex: 1;
+  min-width: 250px;
+  margin: 20px;
+}
+
+.form-item i {
+  font-size: 70px;
+  color: #cfa670;
+  margin-bottom: 15px;
+}
+
+.form-item h1 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-family: 'Arial Black', sans-serif;
+}
+
+.form-item h4 {
+  font-size: 16px;
+  color: #333;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.fa-square-whatsapp{
+    font-size: 100px;
+    color: lightgreen;
+    margin-left: 690px; 
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.fa-square-whatsapp:hover{
+    transform: scale(1.2);
+    color: greenyellow;
+}
+
+.order-wp{
+    font-size: 25px;
+    margin-top: 10px;
+    margin-left: 610px;
+}
+
+.sub-form{
+    width: 100%;
+    height: 90vh;
+    background: white;
+    display: flex;
+}
+
+.sub-img img{
+    width: 600px;
+    height: 450px;
+    margin-top:  110px;
+    margin-left: 130px;
+}
+
+.sub-form1{
+    
+    width: 600px;
+    height: 450px;
+    margin-top: 110px;
+    margin-left: 20px;
+}
+
+.sub-form1 h1{
+    margin-top: -35px;
+    font-family:'Segoe Print',sans-serif ;
+    font-size: 50px;
+    letter-spacing: 1px;
+    color: #cfa670ff;
+    
+}
+
+.sub-form1 h2{
+    margin-top: -10px;
+    font-size: 50px;
+    font-family:'Britannic Bold',sans-serif ;
+}
+
+.t1{
+    margin-top: 10px;
+    width: 600px;
+    height: 32px;
+    font-size: 23px;
+    padding-top: 3px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.t2{
+    margin-top: 10px;
+    width: 600px;
+    height: 110px;
+    font-size: 23px;
+    padding-top: 3px;
+    padding-left: 5px;
+    padding-right: 5px;
+
+}
+
+
+.sub-form1 button{
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    background: #cfa670;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    color: #000000;
+    margin-top: 10px;
+    width: 110px;
+    height: 40px;
+    transition: color 0.3s ease;
+    
+}
+
+.sub-form1 button span{
+    position: relative;
+    z-index: 1;
+}
+
+.sub-form1 button::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0%;
+    background-color: #000000;
+    transition: width 0.4s ease;
+    z-index: 0;
+}
+
+.sub-form1 button:hover::before{
+    width: 100%;
+}
+
+.sub-form1 button:hover span{
+    color: #cfa670;
+}
+
+.thnkx{
+      width: 600px;
+    height: 450px;
+    margin-top: 110px;
+    margin-left: 20px;
+    display: none;
+}
+
+.thnkx h1{
+     margin-top: -5px;
+    font-family:'Segoe Print',sans-serif ;
+    font-size: 50px;
+    letter-spacing: 1px;
+    color: #cfa670ff;
+   
+}
+
+.thnkx p{
+    margin-top: 10px;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.thnkx h4{
+    margin-top: 20px;
+    font-size: 25px;
+    color: #cfa670;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.thnkx button{
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    background: #cfa670;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    color: #000000;
+    margin-top: 40px;
+    margin-left: 430px;
+    width: 110px;
+    height: 40px;
+    transition: color 0.3s ease;
+    
+}
+
+.thnkx button span{
+    position: relative;
+    z-index: 1;
+}
+
+.thnkx button::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0%;
+    background-color: #000000;
+    transition: width 0.4s ease;
+    z-index: 0;
+}
+
+.thnkx button:hover::before{
+    width: 100%;
+}
+
+.thnkx button:hover span{
+    color: #cfa670;
+}
+
+
+.container{
+    width: 100%;
+    height: 55vh;
+    margin-top: 0;
+    background: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.container iframe{
+    width: 98%;
+    height: 50vh;
+    padding-top: 20px;
+    padding-left: 12px;
+    border-radius: 30px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3),0 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+.trd-sec{
+    height: 60vh;
+    background: rgba(0, 0, 0, 0.7) url('web8.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+    background-position: center center;
+    display: flex;
+}
+
+.end h1{
+    font-size: 50px;
+    color: white;
+    padding-top: 55px;
+    margin-left: 70px;
+    
+}
+
+.end h3{
+    font-size: 20px;
+    color: white;
+    margin-left: 100px;
+    margin-top: 15px;
+}
+
+.end h4{
+    font-size: 20px;
+    color: white;
+    margin-left: 100px;
+    padding-top: 20px;
+}
+
+
+.end1 h1{
+    font-size: 50px;
+    color: white;
+    padding-top: 55px;
+    margin-left: 70px;
+    
+}
+
+.end1 h3{
+    font-size: 20px;
+    color: white;
+    margin-left: 70px;
+    margin-top: 15px;
+}
+
+.end1 h4{
+    font-size: 20px;
+    color: white;
+    margin-left: 70px;
+    padding-top: 5px;
+}
+
+.icon{
+    width: 100px;
+}
+
+.fa-location-dot{
+    color: #cfa670;
+    margin-left: 175px;
+    margin-top: 128px;
+    font-size: 23px;
+}
+
+.fa-envelope{
+        color: #cfa670;
+    margin-left: 171px;
+    margin-top: 20px;
+    font-size: 23px;
+
+}
+
+.fa-phone{
+        color: #cfa670;
+    margin-left: 173px;
+    margin-top: 17px;
+    font-size: 23px;
+    
+}
+
+.fa-facebook{
+        color: white;
+    margin-left: -10px;
+    margin-top: 40px;
+    font-size: 30px;
+    cursor: pointer;
+     transition: transform 0.3s ease;
+}
+.fa-facebook:hover{
+    transform: scale(1.5);
+    color: #cfa670;
+}
+
+.fa-twitter{
+         color: white;
+    margin-left: 70px;
+    margin-top: 40px;
+    font-size: 30px;
+    cursor: pointer;
+   transition: transform 0.3s ease;
+}
+.fa-twitter:hover{
+    transform: scale(1.5);
+    color: #cfa670;
+}
+
+.fa-instagram{
+          color: white;
+    margin-left: 70px;
+    margin-top: 40px;
+    font-size: 30px;
+    cursor: pointer;
+   transition: transform 0.3s ease;
+}
+.fa-instagram:hover{
+    transform: scale(1.5);
+    color: #cfa670;
+}
+
+.fa-whatsapp{
+          color: white;
+    margin-left: 70px;
+    margin-top: 40px;
+    font-size: 30px;
+    cursor: pointer;
+   transition: transform 0.3s ease;
+}
+.fa-whatsapp:hover{
+    transform: scale(1.5);
+    color: #cfa670;
+}

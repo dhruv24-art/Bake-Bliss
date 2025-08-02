@@ -1,0 +1,183 @@
+<?php
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="story.css">
+    <link rel="stylesheet" href="story-res.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>story</title>
+</head>
+
+     <body class="body-back">
+    <nav class="navbar background1">
+              <div class="hamburger" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul class="navlist" id="navList">
+        <div class="logo"><img src="c4.png" alt="logo"/></div>
+         <li><a href="index.html" >Home</a></li>
+         <li><a href="menu.html" >Menu</a></li>
+         <li><a href="story.html" >Our-Story</a></li>
+         <li><a href="gallery.html" >Gallery</a></li>
+         <li><a href="contact.html" >Contact</a></li>
+
+          <li class="order-button-container"><button class="btn order-btn" onclick="open_cont()"><span>Order Now</span></button></li>
+         </ul>
+        </nav>
+
+        <section class="background firstSection">
+       
+    <div class="mcan">
+  <canvas id="mCanvas" width="810" height="650"></canvas>      
+    </div>    
+    <div class="tBig">
+        <p class="ent">The people of a charming town, Rewari had always delighted in the simple pleasures of life, but there was one thing they had never truly experienced—the joy of indulging in a delectable, mouthwatering cake.</p>
+        <h1 class="ent1">About-Us</h1>
+    </div>
+   
+        </section>
+
+    <section class="para">
+        <h1>Our-Story / About-Us</h1>
+        <p><font style="color: blue"><i>Bake Bliss was co-founded in 2025 by a </font><font style="color: blue"><b>passionate and talented bakery chef named Shubham with a Management Professional Bhavya, an IIM Alumnus.</b></i></font></p>
+        <p>Both set out on a mission to change this culinary landscape forever. With a burning desire to bring the finest cakes to the people of Panchkula. Shubham ensured that each cake he baked was a masterpiece of flavour and quality and Bhavya enured that we stay in customers happiness business.</p>
+        <p>At Bake Bliss, there is an unwavering commitment to using only the highest quality ingredients. Shubham personally sources the freshest butter, the finest cocoa, and the most exquisite vanilla to create cakes that would captivate taste buds and leave a lasting impression. From locally organic grown fruits to rich Belgian chocolates, no expense was spared to guarantee an unforgettable experience with every bite.</p>
+        <p>People of Panchkula had been unknowingly consuming cakes and pastries that were crafted with poor and low quality ingredients. The tasteless and lackluster treats had left them longing for something more. But when Bake Bliss opened its doors, a wave of excitement and anticipation spread through Panchkula. Finally, our customers could savor the true delight of a real, delicious cake delivered at their homes.</p>
+        <p>All our products including Cakes, Pastries and Donuts are like a symphony of sweetness that enchanted the senses and won over even the most discerning palates.</p>
+        <p> Shubham and Bhavya not only revolutionized the taste of cakes in Panchkula but also raised the bar when it came to hygiene standards. Bake Bliss's gleaming kitchen was a testament to their commitment to providing the utmost cleanliness and safety.</p>
+        <h4>Each cake was prepared with meticulous attention to detail, ensuring that every ingredient was handled and stored with the utmost care.</h4>
+        <p>The people of Panchkula finally have a bakery they could trust, where the love and passion for baking were matched only by the highest standards of cleanliness.</p>
+        <p>Bake Bliss became more than just a bakery; it became a beloved institution that brought joy, celebration, and a touch of sweetness to the lives of the people of Panchkula. Birthdays are marked with exquisitely decorated cakes, weddings were adorned with magnificent multi-tier cakes, and everyday moments are made more special with a box of scrumptious pastries, cheesecakes and donuts.</p>
+        <p> The success of Bake Bliss didn't just lie in its culinary prowess but in its ability to touch hearts and create memories.</p>
+        <p>Shubham & Bhavya's vision had transformed the way the people of Panchkula experienced the simple pleasure of a slice of cake. With each bite, they tasted the passion, the dedication, and the love that went into creating something truly extraordinary.</p>
+        <p> And so, Bake Bliss's story continues to unfold, as the people of Panchkula savor each exquisite creation, knowing that they are part of a delicious revolution that began with a dream—to give them a taste of the finest, most delightful cakes they had ever known.</p>
+        <button><span><i class="fa-solid fa-book"></i> Check Out Our Menu</span></button>
+    </section>
+
+    <div class="story1">
+        <div class="customers-li">
+          <h1>GuestBook</h1>
+          <img src="web3.jpg"/>
+          <h2>TESTIMONIALS</h2>
+          <div class="slider-container">
+      <div class="slide fade">
+        <p class="top-text">"Amazing Cakes! I feel every bite of cake while eating !"</p>
+        <p class="top-text2">Fresh Pastry and Donuts are also made in this bakery.</p>
+        <img src="guest1.jpg" alt="Guest 1">
+        <p class="bottom-text">— Riya, Panchkula</p>
+      </div>
+      <div class="slide fade">
+        <p class="top-text">"Super fast delivery."</p>
+        <p class="top-text2">Delicious and fresh cakes... We loved it.</p>
+        <p class="top-text2">Thanku BakeBliss</p>
+        <img src="guest2.jpg" alt="Guest 2">
+        <p class="bottom-text">— Aarav, Sector 15</p>
+      </div>
+      <div class="slide fade">
+        <p class="top-text">"So fresh & hygienic!"</p>
+        <p class="top-text2">Must try their pine-apple pastry also</p>
+        <p class="top-text2">It's damn good</p>
+        <img src="guest3.jpg" alt="Guest 3">
+        <p class="bottom-text">— Rahul, Chandigarh</p>
+      </div>
+      <div class="slide fade">
+        <p class="top-text">"Tasted like heaven!"</p>
+        <img src="guest4.jpg" alt="Guest 4">
+        <p class="bottom-text">— Simran, Zirakpur</p>
+      </div>
+    
+        </div>
+    </div>
+
+    <div class="pro">
+        <h1>Our Team</h1>
+        <h2>MEET OUR PROFESSIONAL</h2>
+        <img src="web3.jpg"/>
+    </div>
+    <div class="pro2">
+        <div class="pro2-img">
+        <img src="head-chef.jpg"/>
+        <img src="manager.jpg"/>
+        </div>
+    </div>
+
+     <section class="trd-sec">
+  <div class="icon">
+    <i class="fa-solid fa-location-dot"></i>
+    <i class="fa-solid fa-envelope"></i>
+    <i class="fa-solid fa-phone"></i>
+  </div>
+  <div class="end">
+    <h1>Contact</h1>
+    <h3>Herbal Park, Sector-26, Panchkula, Haryana</h3>
+    <h4>info@bakebliss.com</h4>
+    <h4>+91-7082010305</h4>
+  </div>
+  <div class="end1">
+    <h1>Bake Bliss</h1>
+    <h3>Cakes</h3>
+    <h4>Cheesecakes</h4>
+    <h4>Donuts</h4>
+    <h4>Pastry</h4>
+    <h4>Chocolate</h4>
+    <h4>Home Delivery in Panchkula</h4>
+    <i class="fa-brands fa-facebook"></i>
+    <i class="fa-brands fa-twitter"></i>
+    <i class="fa-brands fa-instagram"></i>
+    <i class="fa-brands fa-whatsapp"></i>
+  </div>
+  <div class="end">
+    <h1>Working Hours</h1>
+    <h3>Mon-Fri...............8AM To 8PM</h3>
+    <h4>Sat........................8AM To 6PM</h4>
+    <h4>Sun.....................11AM To 4PM</h4>
+  </div>
+  
+</section>
+
+
+</body>
+
+ <script>
+            window.onload=function(){
+                var canvas=document.getElementById("mCanvas");
+                var ctext=canvas.getContext("2d");
+                var x=90;
+                var y=590;
+                ctext.font="100pt Segoe Print";
+                ctext.lineWidth=7;
+                ctext.strokeStyle="#cfa670ff";
+                ctext.strokeText("Our-Story",x,y);
+            };     
+
+            let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let slides = document.getElementsByClassName("slide");
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) { slideIndex = 1 }    
+  slides[slideIndex - 1].style.display = "block";  
+  setTimeout(showSlides, 3000); // 3 seconds delay
+}
+
+    function open_cont() {
+        window.location.href = "contact.html";
+    }
+    
+    function toggleMenu() {
+    const navList = document.getElementById("navList");
+    navList.classList.toggle("show");
+}
+
+   </script>
+
+</html>
+?>

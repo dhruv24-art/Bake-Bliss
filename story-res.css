@@ -1,0 +1,109 @@
+@media (max-width: 767px){
+   
+    html{
+    scroll-behavior: smooth;
+}
+
+@media (max-width: 767px) {
+    #mCanvas {
+        width: 100% !important;
+        height: 200px !important;
+    }
+}
+
+ body, html {
+        max-width: 100vw;
+        overflow-x: hidden;
+ }
+
+
+.logo{
+    margin-top: 5px;
+}
+
+.logo img{
+    width: 70%;
+    margin-left: 0;
+    height: 45px;
+}
+
+.navbar{
+    flex-direction: column;
+    height: 7vh;
+}
+
+    .hamburger {
+        display: block;
+        font-size: 35px;
+        color: white;
+        cursor: pointer;
+        margin-top: -15px;
+        margin-right: 20px;
+        position: absolute;
+        top: 25px;
+        right: 20px;
+        z-index: 2000;
+    }
+
+
+.navlist{
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    background-color: rgba(0,0,0,0.85);
+    position: absolute;
+    top: 100px;
+    left: 0;
+    padding: 20px 0;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 1.5s ease-out;
+    z-index: 1500;
+    align-items: center;
+    justify-content: space-between; /* Added to push the button to the right */
+}
+
+.navlist.show {
+        display: flex;
+        max-height: 500px; /* Enough height for all menu items */
+        transition: max-height 1.5s ease-in;
+    }
+
+
+.navlist li{
+    margin-right: 20px;
+}
+
+.navlist li {
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+}
+
+.navlist.show li {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.order-button-container {
+    margin-left: 40px; /* Pushes the button to the far right */
+    padding-right: 20px; /* Adjust padding as needed */
+}
+
+.firstSection{
+    flex-direction: column;
+    height: 60vh;
+}
+.tBig{
+    margin-top: -30px;
+    margin-left: -20px;
+    width: 80%;
+}
+.tBig p{
+    margin-top: 0;
+    font-size: 25px;
+    margin-left: -25px;
+    padding-right: 20px;
+}
+}

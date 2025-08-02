@@ -1,0 +1,553 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.body-back{
+    background: rgba(0, 0, 0, 0.55) url('web8.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    animation: fadeIn 1.5s ease-in-out forwards;
+
+}
+
+.logo{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img{
+    width: 50%;
+    border: 2px solid white;
+    border-radius: 50px;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    cursor: pointer;
+    animation: fadeIn 1.5s ease-in-out forwards;
+}
+@keyframes fadeIn{
+from{
+    opacity: 0;
+    transform: translateY(-20px);
+}
+to{
+    opacity: 1;
+    transform: translateY(0);
+}
+}
+
+
+.navlist{
+    width: 100%;
+  /*  background-color: black;*/
+    display: flex;
+    align-items: center;
+}
+
+.navlist li{
+list-style: none;
+padding: 20px 40px;
+transition: transform 0.3s ease;
+}
+
+.navlist li a{
+text-decoration: none;
+color: white;
+padding-left: 20px;
+font-size: 17px;
+display: inline-block;
+transition: transform 0.3s ease;
+}
+
+.navlist li a:hover{
+    transform: translateY(-5px);
+    font-size: 16.5px;
+    color: #cfa670;
+}
+
+
+.navlist img{
+    width: 80px;
+    height: 60px;
+}
+
+/* New styles for the order button */
+.order-button-container {
+    margin-left: 200px; /* Pushes the button to the far right */
+    padding-right: 20px; /* Adjust padding as needed */
+}
+
+.order-btn {
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    background: #cfa670;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    color: #000000;
+    width: 120px; /* Adjust width as needed */
+    height: 40px;
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+
+.order-btn span {
+    position: relative;
+    z-index: 1;
+}
+
+.order-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0%;
+    background-color: #000000;
+    transition: width 0.4s ease;
+    z-index: 0;
+}
+
+.order-btn:hover::before {
+    width: 100%;
+}
+
+.order-btn:hover span {
+    color: #cfa670;
+}
+
+
+.background{
+    background: rgba(0, 0, 0, 0.8) url('i7.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+    animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+.background1{
+    background: rgba(0, 0, 0, 0.9)url('c6.jpg') ;
+    background-size: cover;
+    background-blend-mode: darken;
+    animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+.firstSection{
+display: flex;    
+height: 95vh;
+}
+
+.tBig{
+    padding: 70px;
+    width: 450px;
+    color: white;
+    font-size: 16.5px;
+    margin-left: 30px;
+    margin-top: 420px;
+    text-align: justify;
+    font-family: 'Segoe Print',sans-serif;
+}
+
+.tBig p{
+    opacity: 0;
+    transform: translateY(100px);
+    animation: slideUp 2s ease-out 2s forwards;
+
+}
+
+.tBig h1{
+      opacity: 0;
+    transform: translateY(100px);
+    animation: slideUp 2s ease-out 2s forwards;
+    font-size: 35px;
+}
+
+
+#mCanvas{
+    
+    opacity: 0;
+    transform: translateY(100px);
+    animation: slideUp 2s ease-out 2s forwards;
+
+}
+
+@keyframes slideUp{
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.para{
+    width: 100%;
+    height: 170vh;
+    background: white;
+    margin-top: 0;
+}
+
+.para h1{
+     padding-top: 65px;
+    font-family:'Segoe Print',sans-serif ;
+    font-size: 45px;
+    margin-left: 200px;
+    color: #cfa670ff;
+}
+
+.para h4{
+    margin-left: 200px;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.para p{
+    font-size: 18px;
+    margin-left: 200px;
+    margin-right: 100px;
+    margin-top: 35px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.para button{
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    background: #cfa670;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    color: #000000;
+    margin-top: 40px;
+    margin-left: 600px;
+    width: 250px;
+    height: 50px;
+    transition: color 0.3s ease;
+    
+}
+
+.para button span{
+    position: relative;
+    z-index: 1;
+}
+
+.para button::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0%;
+    background-color: #000000;
+    transition: width 0.4s ease;
+    z-index: 0;
+}
+
+.para button:hover::before{
+    width: 100%;
+}
+
+.para button:hover span{
+    color: #cfa670;
+}
+
+.story1{
+    width: 100%;
+    height: 100vh;
+    background: none;
+}
+
+.customers-li{
+    margin-top: 90px;
+    margin-left: 770px;
+    border-radius: 30px;
+    width: 570px;
+    height: 680px;
+    background: white;
+}
+
+.customers-li h1{
+    margin-left:180px ;
+    padding-top: 30px;
+    font-family:'Segoe Print',sans-serif ;
+    font-size: 35px;
+    letter-spacing: 2px;
+    color: #cfa670ff;
+    
+}
+
+.customers-li h2{
+    font-size: 40px;
+    margin-top: 5px;
+    margin-left: 130px;
+    font-family:'Britannic Bold',sans-serif ;
+}
+
+.customers-li img{
+    width: 50px;
+    height: 50px;
+    margin-left: 250px;
+    margin-top: 5px;  
+}
+
+
+.pro{
+    width: 100%;
+    height: 37vh;
+    background: white;
+    margin-top: 20px;
+}
+
+.pro h1{
+    margin-left:600px ;
+    padding-top: 60px;
+    font-family:'Segoe Print',sans-serif ;
+    font-size: 50px;
+    letter-spacing: 2px;
+    color: #cfa670ff;
+    
+}
+
+.pro h2{
+    font-size: 45px;
+    margin-top: 5px;
+    margin-left: 450px;
+    font-family:'Britannic Bold',sans-serif ;
+}
+
+.pro img{
+    width: 50px;
+    height: 50px;
+    margin-left: 700px;
+    margin-top: 20px;  
+}
+
+.pro2{
+    width: 100%;
+    height: 80vh;
+    background: white;
+    margin-top: 0;
+    display: flex;
+}
+
+.pro2-img{
+    margin-left: 200px;
+}
+
+.pro2-img img{
+    width: 500px;
+    height: 470px;
+    margin-top: 30px;
+    margin-left: 10px;
+    padding-left: 10px;
+}
+
+.trd-sec{
+    height: 60vh;
+    background: rgba(0, 0, 0, 0.7) url('web8.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+    background-position: center center;
+    display: flex;
+}
+
+.end h1{
+    font-size: 50px;
+    color: white;
+    padding-top: 55px;
+    margin-left: 70px;
+    
+}
+
+.end h3{
+    font-size: 20px;
+    color: white;
+    margin-left: 100px;
+    margin-top: 15px;
+}
+
+.end h4{
+    font-size: 20px;
+    color: white;
+    margin-left: 100px;
+    padding-top: 20px;
+}
+
+
+.end1 h1{
+    font-size: 50px;
+    color: white;
+    padding-top: 55px;
+    margin-left: 70px;
+    
+}
+
+.end1 h3{
+    font-size: 20px;
+    color: white;
+    margin-left: 70px;
+    margin-top: 15px;
+}
+
+.end1 h4{
+    font-size: 20px;
+    color: white;
+    margin-left: 70px;
+    padding-top: 5px;
+}
+
+.icon{
+    width: 100px;
+}
+
+.fa-location-dot{
+    color: #cfa670;
+    margin-left: 175px;
+    margin-top: 128px;
+    font-size: 23px;
+}
+
+.fa-envelope{
+        color: #cfa670;
+    margin-left: 171px;
+    margin-top: 20px;
+    font-size: 23px;
+
+}
+
+.fa-phone{
+        color: #cfa670;
+    margin-left: 173px;
+    margin-top: 17px;
+    font-size: 23px;
+    
+}
+
+.fa-facebook{
+        color: white;
+    margin-left: -10px;
+    margin-top: 40px;
+    font-size: 30px;
+    cursor: pointer;
+     transition: transform 0.3s ease;
+}
+.fa-facebook:hover{
+    transform: scale(1.5);
+    color: #cfa670;
+}
+
+.fa-twitter{
+         color: white;
+    margin-left: 70px;
+    margin-top: 40px;
+    font-size: 30px;
+    cursor: pointer;
+   transition: transform 0.3s ease;
+}
+.fa-twitter:hover{
+    transform: scale(1.5);
+    color: #cfa670;
+}
+
+.fa-instagram{
+          color: white;
+    margin-left: 70px;
+    margin-top: 40px;
+    font-size: 30px;
+    cursor: pointer;
+   transition: transform 0.3s ease;
+}
+.fa-instagram:hover{
+    transform: scale(1.5);
+    color: #cfa670;
+}
+
+.fa-whatsapp{
+          color: white;
+    margin-left: 70px;
+    margin-top: 40px;
+    font-size: 30px;
+    cursor: pointer;
+   transition: transform 0.3s ease;
+}
+.fa-whatsapp:hover{
+    transform: scale(1.5);
+    color: #cfa670;
+}
+
+.slider-container {
+  position: relative;
+  width: 90%;
+  max-width: 500px;
+  margin: 40px auto;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 20px;
+  background: #fff;
+  text-align: center;
+  padding: 10px 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.slide {
+  display: none;
+}
+
+.slide img {
+    margin-top: 30px;
+  margin-left: 10px;  
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.bottom-text {
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.top-text2{
+  font-family: 'Segoe UI', sans-serif;
+  color: #cfa670;
+  margin-top: 5px;
+  font-size: 18px;
+  font-weight: 500;
+    
+}
+
+.top-text {
+  font-weight: bold;
+  color: #cfa670;
+  font-size: 21px;
+}
+
+.bottom-text {
+  font-style: italic;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from { opacity: 0.4 }
+  to { opacity: 1 }
+}

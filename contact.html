@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact</title>
+  <link rel="stylesheet" href="contact.css">
+  <!-- Font Awesome 6.7.2 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="body-back">
+
+  <!-- Navbar -->
+  <nav class="navbar background1">
+    <ul class="navlist">
+      <div class="logo"><img src="c4.png" alt="logo"/></div>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="story.html">Our-Story</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li class="order-button-container"><button class="btn order-btn" onclick="open_cont()"><span>Order Now</span></button></li>
+    </ul>
+  </nav>
+
+  <!-- Header -->
+  <section class="background firstSection">
+    <div class="mcan">
+      <canvas id="mCanvas" width="810" height="650"></canvas>      
+    </div>    
+    <div class="tBig">
+      <p class="ent">"Need a custom cake or have a query ?</p>
+      <p class="ent">We'd love to hear from you! Reach out anytime - we're here to help. Every message brings us closer to your perfect bake!"</p>
+      <h1 class="ent1">With Love</h1>
+    </div>
+  </section>
+
+  <!-- Contact Info -->
+  <section class="form">
+    <div class="form-group">
+      <div class="form-item">
+        <i class="fa-sharp fa-solid fa-map"></i>
+        <h1>Address</h1>
+        <h4>Herbal Park/Sector-26/Panchkula/Haryana</h4>
+      </div>
+      <div class="form-item">
+        <i class="fa-solid fa-mobile-screen-button"></i>
+        <h1>Phone</h1>
+        <h4>+91 9179079382</h4>
+        <h4>+91 9685181505</h4>
+      </div>
+      <div class="form-item">
+        <i class="fa-solid fa-envelope-open"></i>
+        <h1>Email</h1>
+        <h4>info@bakebliss.com</h4>
+      </div>
+    </div>
+    <i class="fa-brands fa-square-whatsapp"></i>
+    <h1 class="order-wp">Order On Whatsapp !</h1>
+  </section>
+
+
+
+  <!-- Contact Form -->
+  <div class="sub-form">
+    <div class="sub-img">
+      <img src="web9.jpg" alt="bakery"/>
+    </div>
+
+    <form id="contact-form" autocomplete="off">
+      <div class="sub-form1" id="submit">
+        <h1>Get In Touch</h1>
+        <h2>DROP US LINE</h2>
+        <input type="text" required class="t1" placeholder="Name*" name="x_name" id="name" autocomplete="off">
+        <input type="email" required class="t1" placeholder="Email*" name="x_email" id="mail" autocomplete="off" readonly onfocus="this.removeAttribute('readonly')">
+        <input type="tel" required class="t1" placeholder="Phone*" name="x_phone" id="mob" autocomplete="off" readonly onfocus="this.removeAttribute('readonly')">
+        <input type="text" required class="t1" placeholder="Subject" name="x_subject" id="sub" autocomplete="off">
+        <textarea class="t2" placeholder="Message*" required name="x_message" id="msg" autocomplete="off"></textarea>
+        <button onclick="f1(event)"><span>Submit</span></button>
+      </div>
+    </form>
+
+    <!-- Thank You Section -->
+    <div class="thnkx" id="back">
+      <h1>Thank You For Your Valuable Response!</h1>
+      <p>We truly appreciate your time and effort in reaching out to us.</p>
+      <p>Our team will carefully review your input and get back to you if needed.</p>
+      <p>You might receive a call from our side for further assistance or clarification.</p>
+      <p>Please don't mind if you get a call — it's just to ensure better service and understanding.</p>
+      <h4>Thank you once again for connecting with us.</h4>
+      <button onclick="f2()"><span>Go_Back</span></button>
+    </div>
+  </div>
+
+  <!-- Google Map -->
+  <div class="container">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d109783.24277876155!2d76.7850573256417!3d30.697974989100388!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390f936ed6a2b757%3A0x898668d7061b40f0!2sPanchkula%2C%20Haryana!5e0!3m2!1sen!2sin!4v1752640164450!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+
+  <!-- Footer -->
+  <section class="trd-sec">
+    <div class="icon">
+      <i class="fa-solid fa-location-dot"></i>
+      <i class="fa-solid fa-envelope"></i>
+      <i class="fa-solid fa-phone"></i>
+    </div>
+    <div class="end">
+      <h1>Contact</h1>
+      <h3>Herbal Park, Sector-26, Panchkula, Haryana</h3>
+      <h4>info@bakebliss.com</h4>
+      <h4>+91-7082010305</h4>
+    </div>
+    <div class="end1">
+      <h1>Bake Bliss</h1>
+      <h3>Cakes</h3>
+      <h4>Cheesecakes</h4>
+      <h4>Donuts</h4>
+      <h4>Pastry</h4>
+      <h4>Chocolate</h4>
+      <h4>Home Delivery in Panchkula</h4>
+      <i class="fa-brands fa-facebook"></i>
+      <i class="fa-brands fa-twitter"></i>
+      <i class="fa-brands fa-instagram"></i>
+      <i class="fa-brands fa-whatsapp"></i>
+    </div>
+    <div class="end">
+      <h1>Working Hours</h1>
+      <h3>Mon-Fri...............8AM To 8PM</h3>
+      <h4>Sat........................8AM To 6PM</h4>
+      <h4>Sun.....................11AM To 4PM</h4>
+    </div>
+  </section>
+
+  <!-- JS Script -->
+  <script>
+    window.onload = function () {
+      const canvas = document.getElementById("mCanvas");
+      const ctext = canvas.getContext("2d");
+      ctext.font = "140pt Segoe Print";
+      ctext.lineWidth = 9
+      ctext.strokeStyle = "#cfa670ff";
+      ctext.strokeText("Contact", 70, 620);
+    };
+
+    function f1(event) {
+      event.preventDefault();
+
+      const name = document.getElementById("name").value.trim();
+      const mail = document.getElementById("mail").value.trim();
+      const mob = document.getElementById("mob").value.trim();
+      const sub = document.getElementById("sub").value.trim();
+      const msg = document.getElementById("msg").value.trim();
+
+      if (!name || !mail || !mob || !sub || !msg) {
+        alert("Please fill in all required fields.");
+        return;
+      }
+
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(mail)) {
+        alert("Please enter a valid email address.");
+        return;
+      }
+
+      if (mob.length !== 10 || isNaN(mob)) {
+        alert("Please enter a valid 10-digit phone number.");
+        return;
+      }
+
+      const formData = new FormData();
+      formData.append("name", name);
+      formData.append("email", mail);
+      formData.append("phone", mob);
+      formData.append("subject", sub);
+      formData.append("message", msg);
+      formData.append("_captcha", "false");
+      formData.append("_template", "table");
+
+      fetch("https://formsubmit.co/projectsites784@gmail.com", {
+        method: "POST",
+        headers: {
+          "Accept": "application/json"
+        },
+        body: formData
+      })
+      .then(response => {
+        if (response.ok) {
+          document.getElementById("submit").style.display = "none";
+          document.getElementById("back").style.display = "block";
+        } else {
+          alert("Form submit failed. Please try again.");
+        }
+      })
+      .catch(error => {
+        alert("Error: " + error);
+      });
+    }
+
+    function f2() {
+      document.getElementById("submit").style.display = "block";
+      document.getElementById("back").style.display = "none";
+    }
+        function open_cont() {
+         document.getElementById("contact-form").scrollIntoView({behavior:"smooth"})
+    }
+
+  </script>
+</body>
+</html>

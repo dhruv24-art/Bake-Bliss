@@ -1,0 +1,516 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.body-back{
+    background: rgba(0, 0, 0, 0.1) url('web10.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+.logo{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img{
+    width: 50%;
+    border: 2px solid white;
+    border-radius: 50px;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    cursor: pointer;
+    animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.navlist{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.navlist li{
+    list-style: none;
+    padding: 20px 40px;
+    transition: transform 0.3s ease;
+}
+
+.navlist li a{
+    text-decoration: none;
+    color: white;
+    padding-left: 20px;
+    font-size: 17px;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.navlist li a:hover{
+    transform: translateY(-5px);
+    font-size: 16.5px;
+    color: #cfa670;
+}
+
+.navlist img{
+    width: 80px;
+    height: 60px;
+}
+
+/* Order Now Button */
+.order-button-container {
+    margin-left: 200px;
+    padding-right: 20px;
+}
+
+.order-btn {
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    background: #cfa670;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    color: #000000;
+    width: 120px;
+    height: 40px;
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+
+.order-btn span {
+    position: relative;
+    z-index: 1;
+}
+
+.order-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0%;
+    background-color: #000000;
+    transition: width 0.4s ease;
+    z-index: 0;
+}
+
+.order-btn:hover::before {
+    width: 100%;
+}
+
+.order-btn:hover span {
+    color: #cfa670;
+}
+
+/* Backgrounds */
+.background{
+    background: rgba(0, 0, 0, 0.8) url('i7.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+    animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+.background1{
+    background: rgba(0, 0, 0, 0.9) url('c6.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+    animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+/* Intro Section */
+.firstSection{
+    display: flex;    
+    height: 95vh;
+}
+
+.tBig{
+    padding: 70px;
+    width: 600px;
+    color: white;
+    font-size: 16.5px;
+    margin-top: 395px;
+    margin-left: 30px;
+    text-align: justify;
+    font-family: 'Segoe Print', sans-serif;
+}
+
+.tBig p, .tBig h1, #mCanvas {
+    opacity: 0;
+    transform: translateY(100px);
+    animation: slideUp 2s ease-out 2s forwards;
+}
+
+@keyframes slideUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* White Section */
+.sec{
+    width: 80%;
+    height: auto;
+    background: white;
+    border-radius: 30px;
+    margin-top: 50px;
+    margin-left: 150px;
+    padding-bottom: 30px;
+}
+
+.sec1 h1{
+    margin-left: 330px;
+    padding-top: 20px;
+    font-family: 'Segoe Print', sans-serif;
+    font-size: 40px;
+    letter-spacing: 2px;
+    color: #cfa670ff;  
+}
+
+.sec2 p{
+    width: 90%;
+    font-size: 18px;
+    margin-left: 50px;
+    margin-top: 35px;
+    font-family: system-ui, sans-serif;
+}
+
+/* Social Message */
+.space h1{
+    margin-left: 430px;
+    margin-top: 70px;
+    font-family: 'Edwardian Script ITC', sans-serif;
+    font-size: 60px;
+    letter-spacing: 7px;
+    color: #dfb988;
+}
+
+.space h2{
+    color: white;
+    margin-top: 20px;
+    margin-left: 300px;
+    font-size: 60px;
+}
+
+/* Our Promise Section */
+.sec3{
+    width: 100%;
+    height: 50vh;
+    background: rgba(0, 0, 0, 0.1) url('web11.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 70px;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.sec3 h1{
+    font-size: 45px;
+    letter-spacing: 4px;
+    color: red;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.sec3 h2{
+    padding-top: 10px;
+    font-size: 35px;
+    font-family: system-ui, sans-serif;
+    letter-spacing: 1px;
+    font-weight: 400;
+    color: black;
+}
+
+/* Promise Icon Layout */
+.promise-icons {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    padding-bottom: 60px;
+}
+
+.promise-block {
+    text-align: center;
+    width: 220px;
+    margin: 20px;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 15px;
+    padding: 20px 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.promise-block i {
+    font-size: 60px;
+    color: #cfa670;
+    margin-bottom: 15px;
+}
+
+.promise-block h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    color: #444;
+}
+
+.promise-block p {
+    font-size: 14px;
+    color: #444;
+}
+
+/* Gallery section */
+.gall{
+    width: 100%;
+    height: 340vh;
+    background-color: aliceblue;
+    margin-top: 0;
+    margin-left: 0;
+}
+
+.gall h1{
+    margin-left: 530px;
+    padding-top: 40px;
+    font-family: 'Segoe Print', sans-serif;
+    font-size: 50px;
+    letter-spacing: 2px;
+    color: #c87d4b;  
+}
+
+.gall-bday{
+    display: flex;
+    margin-top: 40px;
+}
+
+.gallery-item{
+    padding-left: 35px;
+}
+.gallery-item img{
+    width: 250px;
+    height: 250px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);;
+    border-radius: 35px;
+    transition: transform 0.4s ease;
+}
+.gallery-item img:hover{
+    transform: scale(1.07);
+}
+
+.gall-bday h2{
+    font-size: 22px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-left: 5px;
+    margin-top: 5px;
+    color: #6b3e26;
+}
+
+.gall-bday h3{
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-left: 5px;
+    color: #6a994e;
+}
+
+/* Testimonials */
+.testimonials {
+  background-color: #fff7f0;
+  padding: 60px 30px;
+  text-align: center;
+}
+
+.testimonials h2 {
+  color: #cfa670;
+  font-size: 36px;
+  margin-bottom: 40px;
+  font-family: 'Segoe Print', cursive;
+}
+
+.testimonial-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.testimonial {
+  background: white;
+  border: 1px solid #eee;
+  padding: 20px;
+  width: 280px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  font-family: system-ui;
+}
+
+.testimonial p {
+  font-size: 16px;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.testimonial span {
+  font-weight: bold;
+  color: #cfa670;
+  font-size: 14px;
+}
+
+.trd-sec{
+    height: 60vh;
+    background: rgba(0, 0, 0, 0.7) url('web8.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+    background-position: center center;
+    display: flex;
+}
+
+.end h1{
+    font-size: 50px;
+    color: white;
+    padding-top: 55px;
+    margin-left: 70px;
+    
+}
+
+.end h3{
+    font-size: 20px;
+    color: white;
+    margin-left: 100px;
+    margin-top: 15px;
+}
+
+.end h4{
+    font-size: 20px;
+    color: white;
+    margin-left: 100px;
+    padding-top: 20px;
+}
+
+
+.end1 h1{
+    font-size: 50px;
+    color: white;
+    padding-top: 55px;
+    margin-left: 70px;
+    
+}
+
+.end1 h3{
+    font-size: 20px;
+    color: white;
+    margin-left: 70px;
+    margin-top: 15px;
+}
+
+.end1 h4{
+    font-size: 20px;
+    color: white;
+    margin-left: 70px;
+    padding-top: 5px;
+}
+
+.icon{
+    width: 100px;
+}
+
+.fa-location-dot{
+    color: #cfa670;
+    margin-left: 175px;
+    margin-top: 128px;
+    font-size: 23px;
+}
+
+.fa-envelope{
+        color: #cfa670;
+    margin-left: 171px;
+    margin-top: 20px;
+    font-size: 23px;
+
+}
+
+.fa-phone{
+        color: #cfa670;
+    margin-left: 173px;
+    margin-top: 17px;
+    font-size: 23px;
+    
+}
+
+.fa-facebook{
+        color: white;
+    margin-left: -10px;
+    margin-top: 40px;
+    font-size: 30px;
+    cursor: pointer;
+     transition: transform 0.3s ease;
+}
+.fa-facebook:hover{
+    transform: scale(1.5);
+    color: #cfa670;
+}
+
+.fa-twitter{
+         color: white;
+    margin-left: 70px;
+    margin-top: 40px;
+    font-size: 30px;
+    cursor: pointer;
+   transition: transform 0.3s ease;
+}
+.fa-twitter:hover{
+    transform: scale(1.5);
+    color: #cfa670;
+}
+
+.fa-instagram{
+          color: white;
+    margin-left: 70px;
+    margin-top: 40px;
+    font-size: 30px;
+    cursor: pointer;
+   transition: transform 0.3s ease;
+}
+.fa-instagram:hover{
+    transform: scale(1.5);
+    color: #cfa670;
+}
+
+.fa-whatsapp{
+          color: white;
+    margin-left: 70px;
+    margin-top: 40px;
+    font-size: 30px;
+    cursor: pointer;
+   transition: transform 0.3s ease;
+}
+.fa-whatsapp:hover{
+    transform: scale(1.5);
+    color: #cfa670;
+}
