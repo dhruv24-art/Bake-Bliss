@@ -56,11 +56,15 @@
         <h4>info@bakebliss.com</h4>
       </div>
     </div>
-    <i class="fa-brands fa-square-whatsapp"></i>
-    <h1 class="order-wp">Order On Whatsapp !</h1>
+
+    <!-- WhatsApp Order Section -->
+    <a href="https://wa.me/918209790717?text=Hi%20Bake%20Bliss!%20I%20want%20to%20place%20an%20order." 
+       target="_blank" 
+       class="whatsapp-link">
+      <i class="fa-brands fa-square-whatsapp"></i>
+      <h1 class="order-wp">Order On Whatsapp !</h1>
+    </a>
   </section>
-
-
 
   <!-- Contact Form -->
   <div class="sub-form">
@@ -122,7 +126,13 @@
       <i class="fa-brands fa-facebook"></i>
       <i class="fa-brands fa-twitter"></i>
       <i class="fa-brands fa-instagram"></i>
-      <i class="fa-brands fa-whatsapp"></i>
+
+      <!-- Clickable WhatsApp in Footer -->
+      <a href="https://wa.me/918209790717?text=Hi%20Bake%20Bliss!%20I%20want%20to%20place%20an%20order."
+         target="_blank"
+         class="whatsapp-link">
+        <i class="fa-brands fa-whatsapp"></i>
+      </a>
     </div>
     <div class="end">
       <h1>Working Hours</h1>
@@ -138,7 +148,7 @@
       const canvas = document.getElementById("mCanvas");
       const ctext = canvas.getContext("2d");
       ctext.font = "140pt Segoe Print";
-      ctext.lineWidth = 9
+      ctext.lineWidth = 9;
       ctext.strokeStyle = "#cfa670ff";
       ctext.strokeText("Contact", 70, 620);
     };
@@ -157,7 +167,7 @@
         return;
       }
 
-      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      const emailRegex = /^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/;
       if (!emailRegex.test(mail)) {
         alert("Please enter a valid email address.");
         return;
@@ -177,7 +187,7 @@
       formData.append("_captcha", "false");
       formData.append("_template", "table");
 
-      fetch("https://formsubmit.co/dhruv08609@gmail.com", {
+      fetch("https://formsubmit.co/projectsites784@gmail.com", {
         method: "POST",
         headers: {
           "Accept": "application/json"
@@ -201,11 +211,10 @@
       document.getElementById("submit").style.display = "block";
       document.getElementById("back").style.display = "none";
     }
-        function open_cont() {
-         document.getElementById("contact-form").scrollIntoView({behavior:"smooth"})
-    }
 
+    function open_cont() {
+      document.getElementById("contact-form").scrollIntoView({ behavior: "smooth" });
+    }
   </script>
 </body>
 </html>
-
